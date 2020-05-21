@@ -28,4 +28,9 @@ public class MainActivity extends AppCompatActivity {
         Intent toMechanism = new Intent(this, MechanismActivity.class);
         startActivity(toMechanism);
     }
+
+    public void goToHandleActivity(View view) {
+        Intent toHandle = new Intent(this, HandleActivity.class);
+        startActivity(toHandle);
+    }
 }
