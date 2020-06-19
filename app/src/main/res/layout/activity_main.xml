@@ -11,6 +11,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#CDD2F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -23,7 +24,7 @@
             android:id="@+id/titleBackground"
             android:layout_width="416dp"
             android:layout_height="186dp"
-            android:background="#4BE66A"
+            android:background="#ECDEEB"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -33,12 +34,13 @@
             android:id="@+id/MainTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginBottom="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="casual"
             android:text="@string/bt_tracker"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textColor="#FFFFFF"
+            android:textColor="#6D05C3"
             app:layout_constraintBottom_toBottomOf="@+id/titleBackground"
             app:layout_constraintStart_toEndOf="@+id/imageView" />
 
@@ -58,86 +60,103 @@
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="375dp"
-            android:layout_height="220dp"
+            android:layout_width="388dp"
+            android:layout_height="320dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="8dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.58"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/titleBackground"
-            app:layout_constraintVertical_bias="0.04000002">
+            app:layout_constraintVertical_bias="0.24000001">
 
             <TextView
                 android:id="@+id/MainButton1"
                 android:layout_width="match_parent"
                 android:layout_height="34dp"
                 android:layout_weight="1"
-                android:background="#009688"
+                android:background="#D39EE4"
+                android:fontFamily="casual"
                 android:onClick="goToLogActivity"
                 android:paddingLeft="10dp"
-                android:paddingTop="10dp"
+                android:paddingTop="17dp"
                 android:text="@string/log_body_temperature"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textColor="#FDFAFA" />
+                android:textColor="#41FF01"
+                android:textSize="25sp" />
 
             <View
                 android:id="@+id/view2"
                 android:layout_width="match_parent"
-                android:layout_height="5dp" />
+                android:layout_height="8dp" />
 
             <TextView
                 android:id="@+id/MainButton2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="34dp"
                 android:layout_weight="1"
-                android:background="#009688"
+                android:background="#58FE6E"
+                android:fontFamily="casual"
                 android:onClick="goToNormalActivity"
+                android:paddingLeft="10dp"
+                android:paddingTop="17dp"
                 android:text="@string/check_normal_range"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textColor="#FDFAFA" />
+                android:textColor="#D39EE4"
+                android:textSize="25sp" />
 
             <View
                 android:id="@+id/view3"
                 android:layout_width="match_parent"
-                android:layout_height="5dp" />
+                android:layout_height="8dp" />
 
             <TextView
                 android:id="@+id/MainButton3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="34dp"
                 android:layout_weight="1"
-                android:background="#009688"
+                android:background="#36EFFD"
+                android:fontFamily="casual"
                 android:onClick="goToMechanismActivity"
+                android:paddingLeft="10dp"
+                android:paddingTop="17dp"
                 android:text="@string/mechanism_of_fever"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textColor="#FDFAFA" />
+                android:textColor="#EAEA00"
+                android:textSize="25sp" />
 
             <View
                 android:id="@+id/view4"
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="8dp"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/MainButton4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="1"
-                android:background="#009688"
+                android:background="#FEFE41"
+                android:fontFamily="casual"
                 android:onClick="goToHandleActivity"
+                android:paddingLeft="10dp"
+                android:paddingTop="17dp"
                 android:text="@string/handing_fever"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textColor="#FDFAFA" />
+                android:textColor="#36EFFD"
+                android:textSize="25sp" />
         </LinearLayout>
 
         <Button
             android:id="@+id/setReminderButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="casual"
             android:onClick="setReminder"
+            android:shadowColor="#FFFFFF"
             android:text="Set Reminder"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
